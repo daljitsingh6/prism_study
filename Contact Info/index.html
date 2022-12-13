@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Info</title>
+  </head>
+  <body>
+    <h1>Contact info Using Form only</h1>
+    <form action="/" method="get">
+      <div style="margin: 4px">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div style="margin: 4px">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div style="margin: 4px">
+        <label for="NUMBER">Number: </label>
+        <input type="number" name="number" id="number" />
+      </div>
+      <div>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="Male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Female" />
+        <label for="male">Female</label>
+      </div>
+
+      <div style="margin: 4px">
+        <label for="profession">Proffesion: </label>
+        <input
+          type="text"
+          name="profession"
+          id="profession"
+          list="profession_list"
+        />
+        <datalist id="profession_list">
+          <option value="Govt Job"></option>
+          <option value="programmer"></option>
+          <option value="Manager"></option>
+          <option value="Food supervisor"></option>
+        </datalist>
+      </div>
+      <div style="margin: 4px">
+        <label for="message" style="vertical-align: top">Message</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div style="margin: 4px">
+        <input type="checkbox" /><label for="agree"
+          >I accept the terms and condition</label
+        >
+      </div>
+
+      <div style="margin: 4px">
+        <button type="reset">Reset</button>
+
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
